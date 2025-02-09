@@ -16,7 +16,7 @@ class FormCrearOrder extends Form
     #[Rule(['required'])]
     public int $cantidad;
     
-    #[Rule(['required', 'in:Pendiente, Procesado'])]
+    #[Rule(['required', 'in:Pendiente,Procesado'])]
     public string $estado = "";
 
     public function formStore(){
